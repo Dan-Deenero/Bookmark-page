@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: 'Rubik', sans-serif;
+    /* transition: all;
+    transition-duration: 2s; */
+
+}
+
+/* .sec{
+    background-image: url(./images/);
+} */
+
+.act{
+    @apply after:flex after:bg-primary-softRed  after:w-full after:h-1 lg:after:mt-6;
+}
+
+.fix{
+    @apply bg-neutral-veryDarkBlue text-white opacity-95 fixed transition-all duration-[800ms]   w-full h-screen text-center py-6;
+}
+
+.down{
+    background-image: url(./images/bg-dots.svg);
+    background-repeat:repeat-x;
+    background-position-y: 230px;
+}
+.thios{
+    transform: rotateY(360);
+}
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+ 
+details[open] summary {
+    /* background: blue; */
+    color: hsl(0, 94%, 66%);
+}
+
+details[open] summary::after {
+    content: "-";
+}
+
+details[open] summary ~ * {
+    animation: slideDown 0.3s ease-in-out;
+}
+
+details[open] summary p {
+    opacity: 0;
+    animation-name: showContent;
+    animation-duration: 0.6s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+    margin: 0;
+}
+
+@keyframes showContent {
+    from {
+    opacity: 0;
+    height: 0;
+    }
+    to {
+    opacity: 1;
+    height: auto;
+    }
+}
+@keyframes slideDown {
+    from {
+    opacity: 0;
+    height: 0;
+    padding: 0;
+    }
+
+    to {
+    opacity: 1;
+    height: auto;
+    }
+}
