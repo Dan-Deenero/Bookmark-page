@@ -2,9 +2,21 @@ import logo2 from '../images/logo-bookmark copy.svg';
 import facebook from '../images/icon-facebook.svg'
 import twitter from '../images/icon-twitter.svg'
 import error from '../images/icon-error.svg'
+import { useState } from 'react';
 
 
 const Footer = () => {
+    const [err, setErr] = useState("hidden");
+    const handleChange = e =>{
+        // console.log(e.target.value.length);
+        
+        if(!e.target.value.includes("@") || e.target.value.length < 6){
+            setErr("")
+        }else{
+            setErr("hidden")
+        }
+    }
+
     return ( 
         <footer className="w-full">
                 <div className="bg-primary-softBlue w-full grid justify-center items-center">
@@ -14,12 +26,12 @@ const Footer = () => {
                         <div className="flex flex-col lg:flex-row gap-3">
                             <div className='bg-primary-softRed rounded-md px-1'>
                                 <div className='flex pt-1'>   
-                                    <input type="email" placeholder="Enter your email address" className="py-4 px-4 w-full lg:w-80 rounded-l-md focus:outline-none"/>
-                                    <div className='bg-white flex justify-center items-center px-5 rounded-r-md'>
+                                    <input type="email" placeholder="Enter your email address" className="py-4 px-4 w-full lg:w-80 rounded-l-md focus:outline-none" onChange={handleChange}/>
+                                    <div className={`bg-white flex justify-center items-center px-5 rounded-r-md `}>
                                         <img src={error} alt="" />
                                     </div>
                                 </div>
-                                <div className='bg-primary-softRed rounded-b-lg text-gray-300 font-semibold text-sm text-start pl-2'>whoops, make sure it's an email</div>
+                                <div className={`bg-primary-softRed rounded-b-lg text-gray-300 font-semibold text-sm text-start pl-2 ${err}`}>whoops, make sure it's an email</div>
                             </div>
                             <button className=" text-white text-md items-center h-14 border-primary-softRed bg-primary-softRed border-2 py-3 lg:px-7 focus:outline-none hover:bg-white hover:text-primary-softRed hover:border-2 hover:border-primary-softRed rounded mt-4 md:mt-0">Contact Us</button>
                         </div>

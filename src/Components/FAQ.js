@@ -44,7 +44,7 @@ const FAQ = () => {
                     <hr />
                         
                     <div className='w-full grid justify-center mt-10'>
-                        <button className="hidden lg:inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">More Info</button>
+                        <button className="lg:inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">More Info</button>
                     </div>
                 </div>
             </div>
