@@ -27,14 +27,14 @@ const Footer = () => {
                             <div className='bg-primary-softRed rounded-md px-1'>
                                 <div className='flex pt-1'>   
                                     <input type="email" placeholder="Enter your email address" className="py-4 px-4 w-full lg:w-80 rounded-l-md focus:outline-none" onChange={handleChange}/>
-                                    <div className={`bg-white flex justify-center items-center px-5 rounded-r-md `}>
-                                        <img src={error} alt="" />
+                                    <div className={`bg-white flex justify-center items-center px-5 rounded-r-md`}>
+                                        <img src={error} alt="" className={`${err}`}/>
                                     </div>
                                 </div>
                                 <div className={`bg-primary-softRed rounded-b-lg text-gray-300 font-semibold text-sm text-start pl-2 ${err}`}>whoops, make sure it's an email</div>
                             </div>
                             <button className=" text-white text-md items-center h-14 border-primary-softRed bg-primary-softRed border-2 py-3 lg:px-7 focus:outline-none hover:bg-white hover:text-primary-softRed hover:border-2 hover:border-primary-softRed rounded mt-4 md:mt-0">Contact Us</button>
-                        </div>
+                        </div>  
                     </div> 
                 </div>
                 <div className="bg-neutral-veryDarkBlue">

@@ -15,28 +15,40 @@ const FAQ = () => {
                 <div className="mx-auto max-w-xl">
                     <hr />
                     <details className="w-full cursor-pointer mb-1">
-                        <summary className="w-full font-semibold text-dark flex justify-between px-4 py-3  after:content-['+']">What is Bookmark?</summary>
+                        <summary className="w-full font-semibold text-dark flex justify-between items-center px-4 py-3">
+                            What is Bookmark?
+                            <img src={arrow} alt="" className='w-3 h-2 ml-auto'/>
+                        </summary>
                         <p className="px-4 py-2">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, in tenetur eius et, iusto possimus earum ex necessitatibus fuga harum perspiciatis veniam culpa vero quibusdam commodi est, aliquam iste temporibus.
                         </p>
                     </details>
                     <hr />
                     <details className="w-full cursor-pointer mb-1">
-                        <summary className="w-full font-semibold text-dark flex justify-between px-4 py-3  after:content-['+']">How can I request a new browser?</summary>
+                        <summary className="w-full font-semibold text-dark flex justify-between items-center px-4 py-3">
+                            How can I request a new browser?
+                            <img src={arrow} alt="" className='w-3 h-2 ml-auto'/>
+                        </summary>
                         <p className="px-4 py-2">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, in tenetur eius et, iusto possimus earum ex necessitatibus fuga harum perspiciatis veniam culpa vero quibusdam commodi est, aliquam iste temporibus.
                         </p>
                     </details>
                     <hr />
                     <details className="w-full cursor-pointer mb-1">
-                        <summary className="w-full font-semibold text-dark flex justify-between px-4 py-3  after:content-['+']">Is there a mobile app?</summary>
+                        <summary className="w-full font-semibold text-dark flex justify-between items-center px-4 py-3">
+                            Is there a mobile app?
+                            <img src={arrow} alt="" className='w-3 h-2 ml-auto'/>
+                        </summary>
                         <p className="px-4 py-2">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, in tenetur eius et, iusto possimus earum ex necessitatibus fuga harum perspiciatis veniam culpa vero quibusdam commodi est, aliquam iste temporibus.
                         </p>
                     </details>
                     <hr />
                     <details className="w-full cursor-pointer mb-1">
-                        <summary className="w-full font-semibold text-dark flex justify-between px-4 py-3  after:content-['+']">What about other Chromium browsers?</summary>
+                        <summary className="w-full font-semibold text-dark flex justify-between items-center px-4 py-3">
+                            What about other Chromium browsers?
+                            <img src={arrow} alt="" className='w-3 h-2 ml-auto'/>
+                        </summary>
                         <p className="px-4 py-2">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, in tenetur eius et, iusto possimus earum ex necessitatibus fuga harum perspiciatis veniam culpa vero quibusdam commodi est, aliquam iste temporibus.
                         </p>

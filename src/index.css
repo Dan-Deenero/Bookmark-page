@@ -40,8 +40,8 @@ details[open] summary {
     color: hsl(0, 94%, 66%);
 }
 
-details[open] summary::after {
-    content: "-";
+details[open] img {
+    transform: rotate(180deg);
 }
 
 details[open] summary ~ * {
